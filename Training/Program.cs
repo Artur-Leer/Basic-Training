@@ -1,4 +1,5 @@
-﻿using System;
+﻿// C# BASIC STRUCTURE
+using System;
 
 namespace SchereSteinPapier
 {
@@ -30,7 +31,8 @@ namespace SchereSteinPapier
                 Console.WriteLine("Unentschieden!");
                 }
             
-                // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT
+                // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT // ÜBERSETZT: SONST WENN EINER DER FOLGENDEN FÄLLE TRUE IST, AUSGABE DASS SPIELER GEWONNEN HAT//
+                // ES WERDEN NUR FÄLLE BETRACHTET IN DENEN DER SPIELER GEWINNT; ALLE ANDEREN FÄLLE BEDEUTEN DASS COMPUTER GEWINNT
                 else if ((playerChoice == "Schere" && (computerChoice == "Papier" || computerChoice == "Echse")) ||
                         (playerChoice == "Papier" && (computerChoice == "Stein" || computerChoice == "Spock")) ||
                         (playerChoice == "Stein" && (computerChoice == "Echse" || computerChoice == "Schere")) ||
@@ -39,13 +41,13 @@ namespace SchereSteinPapier
                 {
                 Console.WriteLine(playerName + " gewinnt!");
                 }
-                // FALLS OBIGE VERGLEICHE NICHT ZUTREFFEN (COMPUTER GEWINNT)
+                // FÜR ALLE ANDEREN FÄLLE -> COMPUTER GEWINNT
                 else
                 {
                 Console.WriteLine("Computer gewinnt!");
                 }
                 Console.WriteLine("Möchten Sie noch einmal spielen? (Ja/Nein)");
-                if (Console.ReadLine() != "Ja")
+                if (Console.ReadLine() != "Ja") // FALLS EINGABE ANDERS ALS "Ja" -> Brechen der while(true) Loop und Ende des Programms
                 break;
             }
         }
