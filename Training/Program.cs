@@ -19,6 +19,9 @@ namespace SchereSteinPapier
             Console.WriteLine("Wähle: Schere, Stein, Papier, Echse oder Spock");
             string playerChoice = Console.ReadLine();
 
+            string computerChoice = choices[random.Next(choices.Length)];
+            Console.WriteLine("Computer wählt: " + computerChoice);
+
             
         }
     }
