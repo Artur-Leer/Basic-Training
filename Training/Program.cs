@@ -15,6 +15,11 @@ namespace SchereSteinPapier
             Console.WriteLine("Wie heißt du?:");
             playerName = Console.ReadLine();
 
+            // ERMÖGLICHEN SIE DIE AUSWAHL DES SPIELZUGES
+            Console.WriteLine("Wähle: Schere, Stein, Papier, Echse oder Spock");
+            string playerChoice = Console.ReadLine();
+
+            
         }
     }
 }
