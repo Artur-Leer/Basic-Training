@@ -1,0 +1,14 @@
+/Users/arturleer/Desktop/C#/Training/bin/Debug/net8.0/Training
+/Users/arturleer/Desktop/C#/Training/bin/Debug/net8.0/Training.deps.json
+/Users/arturleer/Desktop/C#/Training/bin/Debug/net8.0/Training.runtimeconfig.json
+/Users/arturleer/Desktop/C#/Training/bin/Debug/net8.0/Training.dll
+/Users/arturleer/Desktop/C#/Training/bin/Debug/net8.0/Training.pdb
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.AssemblyInfoInputs.cache
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.AssemblyInfo.cs
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.csproj.CoreCompileInputs.cache
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.dll
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/refint/Training.dll
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.pdb
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.genruntimeconfig.cache
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/ref/Training.dll
