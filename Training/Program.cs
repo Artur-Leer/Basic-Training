@@ -20,8 +20,23 @@ namespace SchereSteinPapier
             string playerChoice = Console.ReadLine();
 
             string computerChoice = choices[random.Next(choices.Length)];
-            Console.WriteLine("Computer wählt: " + computerChoice);
+            Console.WriteLine("Der Computer wählt: " + computerChoice);
 
+            // UNENTSCHIEDEN PRÜFUNG
+            if (playerChoice == computerChoice)
+            {
+                Console.WriteLine("Unentschieden!");
+            }
+            
+            // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT
+            else if ((playerChoice == "Schere" && (computerChoice == "Papier" || computerChoice == "Echse")) ||
+                     (playerChoice == "Papier" && (computerChoice == "Stein" || computerChoice == "Spock")) ||
+                     (playerChoice == "Stein" && (computerChoice == "Echse" || computerChoice == "Schere")) ||
+                     (playerChoice == "Echse" && (computerChoice == "Spock" || computerChoice == "Papier")) ||
+                     (playerChoice == "Spock" && (computerChoice == "Schere" || computerChoice == "Stein")))
+            {
+                Console.WriteLine(playerName + " gewinnt!");
+            }
             
         }
     }
