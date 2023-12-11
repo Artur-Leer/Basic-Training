@@ -15,32 +15,38 @@ namespace SchereSteinPapier
             Console.WriteLine("Wie heißt du?:");
             playerName = Console.ReadLine();
 
-            // ERMÖGLICHEN SIE DIE AUSWAHL DES SPIELZUGES
-            Console.WriteLine("Wähle: Schere, Stein, Papier, Echse oder Spock");
-            string playerChoice = Console.ReadLine();
-
-            string computerChoice = choices[random.Next(choices.Length)];
-            Console.WriteLine("Der Computer wählt: " + computerChoice);
-
-            // UNENTSCHIEDEN PRÜFUNG
-            if (playerChoice == computerChoice)
+            while (true)
             {
+                // ERMÖGLICHEN SIE DIE AUSWAHL DES SPIELZUGES
+                Console.WriteLine("Wähle: Schere, Stein, Papier, Echse oder Spock");
+                string playerChoice = Console.ReadLine();
+
+                string computerChoice = choices[random.Next(choices.Length)];
+                Console.WriteLine("Der Computer wählt: " + computerChoice);
+
+                // UNENTSCHIEDEN PRÜFUNG
+                if (playerChoice == computerChoice)
+                {
                 Console.WriteLine("Unentschieden!");
-            }
+                }
             
-            // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT
-            else if ((playerChoice == "Schere" && (computerChoice == "Papier" || computerChoice == "Echse")) ||
-                     (playerChoice == "Papier" && (computerChoice == "Stein" || computerChoice == "Spock")) ||
-                     (playerChoice == "Stein" && (computerChoice == "Echse" || computerChoice == "Schere")) ||
-                     (playerChoice == "Echse" && (computerChoice == "Spock" || computerChoice == "Papier")) ||
-                     (playerChoice == "Spock" && (computerChoice == "Schere" || computerChoice == "Stein")))
-            {
+                // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT
+                else if ((playerChoice == "Schere" && (computerChoice == "Papier" || computerChoice == "Echse")) ||
+                        (playerChoice == "Papier" && (computerChoice == "Stein" || computerChoice == "Spock")) ||
+                        (playerChoice == "Stein" && (computerChoice == "Echse" || computerChoice == "Schere")) ||
+                        (playerChoice == "Echse" && (computerChoice == "Spock" || computerChoice == "Papier")) ||
+                        (playerChoice == "Spock" && (computerChoice == "Schere" || computerChoice == "Stein")))
+                {
                 Console.WriteLine(playerName + " gewinnt!");
-            }
-            // FALLS OBIGE VERGLEICHE NICHT ZUTREFFEN (COMPUTER GEWINNT)
-            else
-            {
+                }
+                // FALLS OBIGE VERGLEICHE NICHT ZUTREFFEN (COMPUTER GEWINNT)
+                else
+                {
                 Console.WriteLine("Computer gewinnt!");
+                }
+                Console.WriteLine("Möchten Sie noch einmal spielen? (Ja/Nein)");
+                if (Console.ReadLine() != "Ja")
+                break;
             }
         }
     }
