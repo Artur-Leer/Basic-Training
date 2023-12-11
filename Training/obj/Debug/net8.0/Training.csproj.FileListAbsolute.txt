@@ -12,3 +12,4 @@
 /Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.pdb
 /Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.genruntimeconfig.cache
 /Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/ref/Training.dll
+/Users/arturleer/Desktop/C#/Training/obj/Debug/net8.0/Training.sourcelink.json
