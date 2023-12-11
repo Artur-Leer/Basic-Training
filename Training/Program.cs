@@ -6,14 +6,15 @@ namespace SchereSteinPapier
     {
         static void Main(string[] args)
         {
+            // TYPZUWEISUNG + VARIABLEN-DEFINIERUNG
             string playerName;
             string[] choices = { "Schere", "Stein", "Papier", "Echse", "Spock" };
             Random random = new Random();
 
+            // ERMÖGLICHEN SIE DIE EINGABE DES BENUTZERNAMENS
             Console.WriteLine("Wie heißt du?:");
             playerName = Console.ReadLine();
 
-            
         }
     }
 }
