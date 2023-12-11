@@ -5,13 +5,13 @@ string playerName;
 string[] choices = { "Schere", "Stein", "Papier", "Echse", "Spock" };
 Random random = new Random();
 
-// ERMÖGLICHEN SIE DIE EINGABE DES BENUTZERNAMENS
+// 1. ERMÖGLICHEN SIE DIE EINGABE DES BENUTZERNAMENS
 Console.WriteLine("Schön dass du hier bist! Wie lautet dein Name? :");
 playerName = Console.ReadLine();
 
-while (true)
+while (true) // 4. BELIEBIG OFT WIEDERHOLBAR 
 {
-    // ERMÖGLICHEN SIE DIE AUSWAHL DES SPIELZUGES
+    // 2. ERMÖGLICHEN SIE DIE AUSWAHL DES SPIELZUGES
     Console.WriteLine(playerName + ", bitte Wähle: Schere, Stein, Papier, Echse oder Spock");
     string playerChoice = Console.ReadLine();
 
@@ -24,13 +24,14 @@ while (true)
     string computerChoice = choices[random.Next(choices.Length)];
     Console.WriteLine("Der Computer wählt: " + computerChoice);
 
-    // UNENTSCHIEDEN PRÜFUNG
+    // 5. TREFFEN BEIDE SPIELER DIESELBE AUSWAHL, WIRD DIE RUNDE WIEDERHOLT
     if (playerChoice == computerChoice)
     {
         Console.WriteLine("Unentschieden!");
     }
 
-    // DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT // ÜBERSETZT: SONST WENN EINER DER FOLGENDEN FÄLLE TRUE IST, AUSGABE DASS SPIELER GEWONNEN HAT//
+    // 3.ALGORITHMUS DEFINIERE FÄLLE IN DEM DER SPIELER GEWINNT // 
+    // ÜBERSETZT: SONST WENN EINER DER FOLGENDEN FÄLLE TRUE IST, AUSGABE DASS SPIELER GEWONNEN HAT//
     // ES WERDEN NUR FÄLLE BETRACHTET IN DENEN DER SPIELER GEWINNT; ALLE ANDEREN FÄLLE BEDEUTEN DASS COMPUTER GEWINNT
     else if ((playerChoice == "Schere" && (computerChoice == "Papier" || computerChoice == "Echse")) ||
             (playerChoice == "Papier" && (computerChoice == "Stein" || computerChoice == "Spock")) ||
