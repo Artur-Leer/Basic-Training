@@ -37,7 +37,11 @@ namespace SchereSteinPapier
             {
                 Console.WriteLine(playerName + " gewinnt!");
             }
-            
+            // FALLS OBIGE VERGLEICHE NICHT ZUTREFFEN (COMPUTER GEWINNT)
+            else
+            {
+                Console.WriteLine("Computer gewinnt!");
+            }
         }
     }
 }
