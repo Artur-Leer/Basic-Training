@@ -1,0 +1,24 @@
+﻿<Window x:Class="GameUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+            <StackPanel Margin="10">
+            <Label Content="Name:"/>
+            <TextBox x:Name="nameTextBox" Margin="0,0,0,10"/>
+
+            <Button Content="Button 1" Click="Button_Click"/>
+            <Button Content="Button 2" Click="Button_Click"/>
+            <Button Content="Button 3" Click="Button_Click"/>
+            <Button Content="Button 4" Click="Button_Click"/>
+            <Button Content="Button 5" Click="Button_Click"/>
+
+            <Label Content="Ausgabe:"/>
+            <TextBlock x:Name="outputTextBlock" Text=""/>
+            </StackPanel>
+    </Grid>
+</Window>
