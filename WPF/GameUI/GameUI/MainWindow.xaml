@@ -11,11 +11,11 @@
             <Label Content="Name:"/>
             <TextBox x:Name="nameTextBox" Margin="0,0,0,10"/>
 
-            <Button Content="Button 1" Click="Button_Click"/>
-            <Button Content="Button 2" Click="Button_Click"/>
-            <Button Content="Button 3" Click="Button_Click"/>
-            <Button Content="Button 4" Click="Button_Click"/>
-            <Button Content="Button 5" Click="Button_Click"/>
+            <Button Content="Schere" Click="Button_Click_Schere"/>
+            <Button Content="Stein" Click="Button_Click_Stein"/>
+            <Button Content="Papier" Click="Button_Click_Papier"/>
+            <Button Content="Echse" Click="Button_Click_Echse"/>
+            <Button Content="Spock" Click="Button_Click_Spock"/>
 
             <Label Content="Ausgabe:"/>
             <TextBlock x:Name="outputTextBlock" Text=""/>
