@@ -12,7 +12,6 @@ using System.Windows.Shapes;
 
 namespace GameUI
 {
-  
     public partial class MainWindow : Window
     {
         public MainWindow()
